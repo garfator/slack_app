@@ -13,6 +13,8 @@ const template = __dirname + '/../pages/auth.ejs';
 * @param {string} code Slack-provided authorization code
 * @param {string} error Slack-provided error
 * @returns {any}
+
+//Setting but Oauth
 */
 module.exports = (code = null, error = '', callback) => {
 
