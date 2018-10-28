@@ -25,4 +25,6 @@ module.exports = (user, channel, text = '', command = {}, botToken = null, callb
       // See https://api.slack.com/docs/message-attachments for more info.
     ]
   });
+
+  //This is the spin method for the wheel
 };
