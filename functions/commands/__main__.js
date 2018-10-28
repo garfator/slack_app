@@ -12,6 +12,8 @@ const message = require('../../utils/message.js');
 *     $ lib .commands.NAME [username] [channel] [text]
 *
 *   You should not need to modify this file to get a basic Slack app running.
+
+// Need to set up hamture
 *
 * @returns {object}
 */
