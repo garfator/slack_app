@@ -28,4 +28,5 @@ module.exports = (user, channel, text = '', command = {}, botToken = null, callb
  //Ensure this says hello
 
   //This sure is a hello
+//I think this says hello
 };
