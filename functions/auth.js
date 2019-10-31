@@ -6,7 +6,7 @@ const ejs = require('ejs');
 const storage = require('../helpers/storage.js');
 
 const template = __dirname + '/../pages/auth.ejs';
-
+//This auth def needs to be changed
 /**
 * Authorization HTML page to grant Slack App OAuth Permission
 *   To modify the template, check out /pages/auth.ejs.
