@@ -6,6 +6,8 @@ const message = require('../../utils/message.js');
 const EventCache = require('../../helpers/event_cache.js');
 const Cache = new EventCache(60000);
 
+//I guess this handles the tokens
+
 /**
 * Slack Event Handler:
 *   This function receives events from Slack and dispatches
