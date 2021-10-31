@@ -32,4 +32,24 @@ module.exports = function getBotToken(teamId, callback) {
 
   });
 
+  storage.postTeam(teamId, (err, team) => {
+
+    if (err) {
+      return callback(err);
+    }
+
+    let botToken = (team.bot || {}).bot_access_token;
+
+    if (!botToken) {
+      return callback(new Error('No Bot Token Specified'));
+    }
+
+    else {
+      return callback(new Error ('Other error present'));
+
+    }
+    return callback(null, botToken);
+
+  });
+
 }

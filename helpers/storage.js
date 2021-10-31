@@ -32,5 +32,16 @@ module.exports = {
       }
       callback(err, value);
     });
-  }
+  },
+
+   postTeam: (teamId, callback) => {
+    if (CACHE[teamId]) {
+      return callback(null, CACHE[teamId]);
+    }
+    lib.utils.storage.post(formatTeamKey(teamId), (err, value) => {
+      if (!err) {
+        CACHE[teamId] = value;
+      }
+      callback(err, value);
+    });
 };
