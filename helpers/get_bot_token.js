@@ -24,6 +24,10 @@ module.exports = function getBotToken(teamId, callback) {
       return callback(new Error('No Bot Token Specified'));
     }
 
+    else {
+      return callback(new Error ('Other error present'));
+
+    }
     return callback(null, botToken);
 
   });
